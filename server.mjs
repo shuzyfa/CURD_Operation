@@ -18,6 +18,7 @@ app.use((req, res, next) => {
   app.get('/users', (req, res) => {
     res.send(users)
   })
+  
   app.get('/user/:id', (req, res) => {
   
     if (users[req.params.id]) {
